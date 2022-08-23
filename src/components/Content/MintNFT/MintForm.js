@@ -4,7 +4,8 @@ import Web3Context from '../../../store/web3-context';
 import CollectionContext from '../../../store/collection-context';
 
 const ipfsClient = require('ipfs-http-client');
-const ipfs = ipfsClient.create({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
+// const [multiaddr, setMultiaddr] = useState('/ip4/127.0.0.1/tcp/5001')
+const ipfs = ipfsClient.create('/ip4/127.0.0.1/tcp/5001');
 
 const MintForm = () => {  
   const [enteredName, setEnteredName] = useState('');
