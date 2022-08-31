@@ -47,6 +47,8 @@ const NFTCollection = () => {
     });            
   };
 
+  console.log("buyHandler")
+
   const cancelHandler = (event) => {    
     const cancelIndex = parseInt(event.target.value);
     marketplaceCtx.contract.methods.cancelOffer(marketplaceCtx.offers[cancelIndex].offerId).send({ from: web3Ctx.account })

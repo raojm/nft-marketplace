@@ -69,9 +69,9 @@ const Navbar = () => {
               {`CLAIM ${formatPrice(marketplaceCtx.userFunds)} ETH`}
             </button>}
           {fundsLoading &&
-            <div class="d-flex justify-content-center text-info">
-              <div class="spinner-border" role="status">
-                <span class="sr-only"></span>
+            <div className="d-flex justify-content-center text-info">
+              <div className="spinner-border" role="status">
+                <span className="sr-only"></span>
               </div>
           </div>}          
         </li>

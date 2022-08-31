@@ -123,6 +123,8 @@ const MarketplaceProvider = props => {
       const offer = await contract.methods.offers(i + 1).call();
       offers.push(offer);
     }
+
+    console.log("offers:", offers)
     offers = offers
     .map(offer => {
       offer.offerId = parseInt(offer.offerId);
